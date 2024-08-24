@@ -1,0 +1,95 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(320deg, #3a1c71, #d76d77, #ffaf7b);
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.container{
+    backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(35, 35, 35, 0.4);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.3);
+    border: 1px solid (255,255,255,0.35);
+    flex-basis: 350px;
+    height: 500px;
+    padding: 20px 30px;
+}
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 32px;
+    overflow: auto;
+    padding: 16px;
+    text-align: right;
+    width: 320px; 
+    font-family: inherit;  
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+}
+
+.calc-button{
+    backdrop-filter: blur(5.5px);
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 60px;
+}
+
+.calc-button:last-child{
+    color: #232323;
+    background: #f7ae5b;
+}
+
+.calc-button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+.calc-button:hover{
+    background-color: inherit;
+}
+
+.calc-button:active{
+    background-color: #f7ae5b;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis: 73%;
+}

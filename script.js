@@ -33,22 +33,22 @@ function divide(a,b) {
 // and then calls one of the basic math operator functions on the numbers.
 function operate(operator, a, b) {
     switch (operator) {
-        case '+':
+        case '&plus':
             add(a,b);
             break;
         
-        case '-':
+        case '&minus':
             subtract(a,b);
             break;
 
-        case '*':
+        case '&times':
             multiply(a,b);
             break;
         
-        case '0xC3':
+        case '&divide':
             divide(a,b);
             break;
-            
+
         default:
             break;
     }
