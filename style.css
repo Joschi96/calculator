@@ -31,7 +31,7 @@ body{
     border: 1px solid (255,255,255,0.35);
     flex-basis: 350px;
     height: 500px;
-    padding: 20px 30px;
+    padding: 24px 30px;
 }
 
 .screen{
@@ -52,7 +52,7 @@ body{
 .calc-button-row{
     display: flex;
     justify-content: space-between;
-    margin: 4% 0;
+    margin: 5% 0;
 }
 
 .calc-button{
@@ -88,7 +88,7 @@ body{
 
 .calc-button:last-child:active{
     background-color: #f7ae5b;
-}.
+}
 
 .double{
     flex-basis: 47%;

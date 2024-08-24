@@ -3,7 +3,38 @@
 // number, an operator, and another number. For example, 3 + 5.
 let num1 = 0;
 let num2 = 0;
-let op = ''; 
+let op = '';
+let runningTotal = 0;
+let displayValue = '0';
+
+let btnNum = container.querySelector("button")
+
+function buttonClick(value) {
+    if (isNaN(value)) {
+        handleSymbol(value);
+    } else{
+        handleNumber(value);
+    }
+}
+
+function handleSymbol(symbol) {
+    switch (symbol) {
+        case 'C':
+            displayValue = '0';
+            runningTotal = 0;
+            break;
+        case '←':
+            if (displayValue.length === 1) {
+                displayValue = '0';
+            } else{
+                displayValue = displayValue.substring(0,displayValue.length-1);
+            }
+    
+        default:
+            break;
+    }
+}
+
 
 function add(a,b) {
     return a+b;
